@@ -7,7 +7,7 @@ const inputElement = document.querySelector('input')
 formElement.addEventListener('submit', (e)=>{
     e.preventDefault()
     const address = inputElement.value
-    const url = 'http://localhost:3000/weather?address=' + encodeURIComponent(address)
+    const url = '/weather?address=' + encodeURIComponent(address)
     const messageOne = document.querySelector('#message-1')
     messageOne.textContent = 'Loading.....'
     const messageTwo = document.querySelector('#message-2')
